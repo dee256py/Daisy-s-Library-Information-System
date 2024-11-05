@@ -11,7 +11,7 @@ class Book(LibraryItem):
     def borrow(self):
         if self.is_available():
             self.mark_as_borrowed()
-            return f"You have borrowed the book: {self.get_details()}"
+            return f"You have now borrowed the book: {self.get_details()}"
         else:
             return "This book is currently not available."
 
