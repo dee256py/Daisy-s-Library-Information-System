@@ -17,11 +17,14 @@ def main():
     library.add_patron(patron1)
     library.add_patron(patron2)
     print(library.lend_item_to_patron(book1, patron1)) 
-    print(library.lend_item_to_patron(magazine1, patron2)) 
+    print(library.lend_item_to_patron(magazine1, patron2))
+     
     print("Alice's borrowed items:", patron1.view_borrowed_items())
     print("Bob's borrowed items:", patron2.view_borrowed_items())
+
     print(library.accept_returned_item(book1, patron1)) 
     print(library.accept_returned_item(magazine1, patron2))  
+
     print("Alice's borrowed items after return:", patron1.view_borrowed_items())
     print("Bob's borrowed items after return:", patron2.view_borrowed_items())
 
